@@ -1,0 +1,9 @@
+{
+  "hooks": [
+    {
+      "event": "user-prompt-submit",
+      "command": "if [ -f '_memory/TOC.md' ]; then echo '🚨 MEMORY CHECK REQUIRED: Read _memory/TOC.md before investigating issues or implementing features. Search Quick Reference for relevant solutions. Only proceed without memory if no match exists. After solving issues, run /documentmemory to capture knowledge.'; else echo '💡 Memory system not initialized. Run /memory-init to set up institutional memory for this project.'; fi",
+      "run_in_background": false
+    }
+  ]
+}

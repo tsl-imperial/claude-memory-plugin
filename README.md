@@ -11,29 +11,35 @@ Developed by the [Transport Systems & Logistics Laboratory](https://transport-sy
 /plugin install memory-system@tsl-claude-plugins
 ```
 
-## Post-Installation
-
-1. Copy `templates/_memory/` to your project root
-2. Add contents of `CLAUDE_SNIPPET.md` to your `CLAUDE.md`
-3. Customize `_memory/DOCS.md` with your project's components
-
-## Contents
-
-```
-├── .claude-plugin/plugin.json    # Plugin manifest
-├── commands/documentmemory.md    # /documentmemory slash command
-├── templates/_memory/
-│   ├── TOC.md                    # Quick reference index
-│   ├── DOCS.md                   # Documentation standards
-│   └── memory_system_setup.md    # Initial setup document
-├── CLAUDE_SNIPPET.md             # CLAUDE.md protocol snippet
-└── install.sh                    # Manual installation script
-```
-
-## Usage
+Then initialize the memory system in your project:
 
 ```bash
-/documentmemory
+/memory-init
 ```
 
-Creates structured memory documents with YAML frontmatter and canonical sections for incidents, implementations, patterns, and decisions.
+## Components
+
+| Component | Description |
+|-----------|-------------|
+| Hook | Reminds to check memory before every task |
+| `/memory-init` | Initializes `_memory/` directory structure |
+| `/documentmemory` | Creates new memory documents |
+| `memory-search` agent | Searches memory for relevant solutions |
+
+## How It Works
+
+1. **Hook** fires on every message, reminding to check `_memory/TOC.md`
+2. **Search** memory for existing solutions before investigating
+3. **Document** new solutions with `/documentmemory` after solving issues
+
+## Plugin Structure
+
+```
+├── .claude-plugin/plugin.json
+├── commands/
+│   ├── memory-init.md
+│   └── documentmemory.md
+├── agents/
+│   └── memory-search.md
+└── hooks.json
+```
