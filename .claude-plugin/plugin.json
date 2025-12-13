@@ -5,7 +5,7 @@
   "author": {
     "name": "TSL"
   },
-  "repository": "https://github.com/tsl/claude-memory-plugin",
+  "repository": "https://github.com/tsl-imperial/claude-memory-plugin",
   "license": "MIT",
   "keywords": [
     "memory",

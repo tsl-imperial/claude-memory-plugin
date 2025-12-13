@@ -26,7 +26,7 @@ The Claude Memory Plugin provides a structured knowledge management approach tha
 
 ```bash
 # Add the TSL marketplace
-/plugin marketplace add tsl/tsl-claude-plugins
+/plugin marketplace add tsl-imperial/tsl-claude-plugins
 
 # Install the memory plugin
 /plugin install memory-system@tsl-claude-plugins
@@ -40,7 +40,7 @@ Or configure in your project's `.claude/settings.json`:
     "tsl-claude-plugins": {
       "source": {
         "source": "github",
-        "repo": "tsl/tsl-claude-plugins"
+        "repo": "tsl-imperial/tsl-claude-plugins"
       }
     }
   },
@@ -53,7 +53,7 @@ Or configure in your project's `.claude/settings.json`:
 ### Option 2: Direct GitHub Install
 
 ```bash
-/plugin marketplace add tsl/claude-memory-plugin
+/plugin marketplace add tsl-imperial/claude-memory-plugin
 /plugin install memory-system@claude-memory-plugin
 ```
 
@@ -61,7 +61,7 @@ Or configure in your project's `.claude/settings.json`:
 
 ```bash
 # Clone the plugin
-git clone https://github.com/tsl/claude-memory-plugin.git
+git clone https://github.com/tsl-imperial/claude-memory-plugin.git
 cd claude-memory-plugin
 
 # Install to your project
@@ -235,4 +235,4 @@ MIT License
 
 ## Related
 
-- [TSL Claude Plugins](https://github.com/tsl/tsl-claude-plugins) - Plugin marketplace
+- [TSL Claude Plugins](https://github.com/tsl-imperial/tsl-claude-plugins) - Plugin marketplace
