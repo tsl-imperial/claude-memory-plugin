@@ -2,6 +2,8 @@
 
 Institutional memory system for Claude Code. Captures and retrieves lessons learned, architectural decisions, and common issues.
 
+Developed by the [Transport Systems & Logistics Laboratory](https://transport-systems.imperial.ac.uk) at Imperial College London.
+
 ## Installation
 
 ```bash
