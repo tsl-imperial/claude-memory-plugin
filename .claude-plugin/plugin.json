@@ -14,6 +14,6 @@
     "lessons-learned"
   ],
   "commands": "./commands/",
-  "agents": "./agents/",
+  "agents": "./agents/memory-search.md",
   "hooks": "./hooks.json"
 }
