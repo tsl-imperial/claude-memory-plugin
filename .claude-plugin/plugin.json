@@ -3,7 +3,7 @@
   "description": "Institutional memory system for capturing and retrieving lessons learned, architectural decisions, and common issues. Includes /documentmemory command and memory-first protocol.",
   "version": "1.0.0",
   "author": {
-    "name": "TSL"
+    "name": "Transport Systems & Logistics Laboratory, Imperial College London"
   },
   "repository": "https://github.com/tsl-imperial/claude-memory-plugin",
   "license": "MIT",
