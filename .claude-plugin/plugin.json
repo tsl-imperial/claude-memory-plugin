@@ -1,0 +1,18 @@
+{
+  "name": "memory-system",
+  "description": "Institutional memory system for capturing and retrieving lessons learned, architectural decisions, and common issues. Includes /documentmemory command and memory-first protocol.",
+  "version": "1.0.0",
+  "author": {
+    "name": "TSL"
+  },
+  "repository": "https://github.com/tsl/claude-memory-plugin",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "knowledge-management",
+    "documentation",
+    "lessons-learned",
+    "institutional-knowledge"
+  ],
+  "commands": "./commands/"
+}
