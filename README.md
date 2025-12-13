@@ -43,3 +43,7 @@ Then initialize the memory system in your project:
 │   └── memory-search.md
 └── hooks.json
 ```
+
+## Marketplace
+
+[TSL Claude Plugins](https://github.com/tsl-imperial/tsl-claude-plugins)
