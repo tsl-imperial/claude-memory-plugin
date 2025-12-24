@@ -32,6 +32,20 @@ Then initialize the memory system in your project:
 2. **Search** memory for existing solutions before investigating
 3. **Document** new solutions with `/documentmemory` after solving issues
 
+## CLAUDE.md Integration
+
+The `/memory-init` command automatically adds a **Mandatory Memory Check Protocol** section to your project's `CLAUDE.md` file. This ensures Claude Code always checks memory before investigating issues or implementing features.
+
+The protocol is customizable - adjust the language to match your project's domain (web apps, mobile apps, libraries, etc.).
+
+## Multi-Directory Support
+
+When working with multiple directories in a Claude Code session:
+
+- **Check for memory in added directories**: External directories may have their own `_memory/` systems
+- **Cross-reference**: Solutions from one project may apply to another
+- **Respect boundaries**: Each project's memory is scoped to that project
+
 ## Plugin Structure
 
 ```

@@ -1,6 +1,6 @@
 ---
 description: Initialize the memory system for this project
-allowed-tools: ["Write", "Read", "Bash"]
+allowed-tools: ["Write", "Read", "Bash", "Edit"]
 ---
 
 Initialize the institutional memory system for this project by creating the `_memory/` directory structure.
@@ -10,6 +10,7 @@ Initialize the institutional memory system for this project by creating the `_me
 1. Check if `_memory/` directory already exists
 2. If it exists, inform the user and skip initialization
 3. If it doesn't exist, create the following structure:
+4. **Update CLAUDE.md** (or create if it doesn't exist) to include the Memory Check Protocol (see below)
 
 ### _memory/TOC.md
 
@@ -124,4 +125,53 @@ Document as you use the system.
 
 Replace `{{TODAY}}` with the current date in YYYY-MM-DD format.
 
-After creating the files, confirm success to the user.
+### CLAUDE.md Memory Protocol Section
+
+Add the following section to the project's `CLAUDE.md` file (create the file if it doesn't exist). If CLAUDE.md already has content, prepend this section at the top or after any existing project title/overview:
+
+```markdown
+## 🚨 MANDATORY MEMORY CHECK PROTOCOL 🚨
+
+**⚠️ STOP: BEFORE ANY TROUBLESHOOTING ERRORS OR IMPLEMENTING NEW FEATURES - CHECK MEMORY FIRST ⚠️**
+
+**STEP 1: ALWAYS READ `_memory/TOC.md` FIRST**
+- Before investigating ANY issue
+- Before implementing ANY feature
+- Before making ANY architectural decisions
+
+**STEP 2: SEARCH THE QUICK REFERENCE**
+- Look for exact symptom matches
+- Check implementation patterns
+- Find related architectural guidance
+
+**STEP 3: READ THE RELEVANT MEMORY DOCUMENT**
+- Follow documented solutions EXACTLY
+- Use implementation insights and patterns
+- Understand why previous decisions were made
+
+**STEP 4: ONLY IF NO MEMORY EXISTS**
+- Proceed with investigation
+- CREATE A NEW MEMORY DOCUMENT after solving
+- UPDATE `_memory/TOC.md` by appending entry to Chronological History section
+
+### Golden Rules
+
+1. **🚨 MEMORY FIRST - NO EXCEPTIONS**: The memory check protocol above is MANDATORY.
+2. **Document Lessons Learned**: After solving significant issues OR completing major implementations, add them to `_memory/` with proper documentation. See `_memory/DOCS.md` for format.
+```
+
+**Note**: Adjust the protocol language to match the project's scope and domain. For example:
+- For a web app: mention common issues like "API timeout", "auth errors"
+- For a mobile app: mention "connection refused", "SDK issues"
+- For a library: mention "breaking changes", "API compatibility"
+
+## Working with Multiple Directories
+
+When the user adds additional directories to the Claude Code session (outside the main project root), you should:
+
+1. **Check for memory files in those directories**: Look for `_memory/` folders in any added directories
+2. **Cross-reference memory systems**: If the external directory has its own memory system, check its `TOC.md` for relevant patterns or solutions
+3. **Respect separate memory scopes**: Each project's `_memory/` contains knowledge specific to that project - don't merge them, but do reference them when working across projects
+4. **Document cross-project learnings**: If you learn something from one project that applies to another, document it in the appropriate project's memory
+
+After creating the files and updating CLAUDE.md, confirm success to the user.
