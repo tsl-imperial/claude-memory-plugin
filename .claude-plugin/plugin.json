@@ -1,7 +1,7 @@
 {
   "name": "memory-system",
   "description": "Institutional memory system for capturing and retrieving lessons learned, architectural decisions, and common issues.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Transport Systems & Logistics Laboratory, Imperial College London"
   },
